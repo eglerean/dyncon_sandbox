@@ -23,5 +23,7 @@ for s =1:Nsubj
     plot(squeeze(mtdts(roi_i,roi_j,:)),'Color',maps(s,:))
     hold on
 end
-   
-
+legend('Subject 1','Subject 2')   
+xlabel('Time [TRs]')
+ylabel('Dyn Fun Coupling (z-scores)')
+title('Dynamic Functional Coupling between ACC and PCUN for two subjects')
